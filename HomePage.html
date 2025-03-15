@@ -90,15 +90,9 @@
             document.getElementById('team_achieve-tab').style.display = tabId === 'team_achieve-tab' ? 'block' : 'none';
         }
         window.onload = function() {
-            document.querySelector('a[href="#team"]').addEventListener('click', function(event) {
+            document.querySelector('a[href="#"]').addEventListener('click', function(event) {
                 event.preventDefault();
                 showTabContent('team_achieve-tab');
-            });
-        };
-        window.onload = function() {
-            document.querySelector('a[href="#lab"]').addEventListener('click', function(event) {
-                event.preventDefault();
-                showTabContent('lab_info-tab');
             });
         };
     </script>
@@ -127,8 +121,8 @@
         </div>
         <div class="module">
             <div style="margin-bottom: 20px;">
-                <a href="#lab" style="margin-right: 15px; font-weight: bold; font-size: 2em">网络空间安全实验室</a>
-                <a href="#team" style="margin-right: 15px; font-weight: bold; font-size: 2em">团队成果</a>
+                <a href="HomePage.html" style="margin-right: 15px; font-weight: bold; font-size: 2em">网络空间安全实验室</a>
+                <a href="#" style="margin-right: 15px; font-weight: bold; font-size: 2em">团队成果</a>
             </div>
             <div id="lab_info-tab" class="tab-content">
                 <h1>简介</h1>
