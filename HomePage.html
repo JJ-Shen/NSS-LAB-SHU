@@ -95,6 +95,12 @@
                 showTabContent('team_achieve-tab');
             });
         };
+        window.onload = function() {
+            document.querySelector('a[href="#"]').addEventListener('click', function(event) {
+                event.preventDefault();
+                showTabContent('lab_info-tab');
+            });
+        };
     </script>
 </head>
 <body>
@@ -121,7 +127,7 @@
         </div>
         <div class="module">
             <div style="margin-bottom: 20px;">
-                <a href="../pages/HomePage.html" style="margin-right: 15px; font-weight: bold; font-size: 2em">网络空间安全实验室</a>
+                <a href="#" style="margin-right: 15px; font-weight: bold; font-size: 2em">网络空间安全实验室</a>
                 <a href="#" style="margin-right: 15px; font-weight: bold; font-size: 2em">团队成果</a>
             </div>
             <div id="lab_info-tab" class="tab-content">
